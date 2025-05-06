@@ -1,0 +1,70 @@
+.hero__block {
+    padding: 100px 24px 100px 24px;
+    background-image: url(../../imgs/mobil-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    text-align: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.hero__title {
+    color: var(--color-light);
+    margin-bottom: 24px;
+    font-size: 40px;
+}
+
+.hero__description {
+    @include description;
+    margin-bottom: 32px;
+    font-size: 15px;
+}
+
+.hero__action {
+    @include btn-default;
+    padding: 16px 31px;
+}
+
+.hero__action:hover {
+    @include btn-hover;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__block {
+        padding: 104px 0 104px 58px;
+        text-align: start;
+        background-image: url(../../imgs/tablet-bg.jpg);
+        background-position: center;
+    }
+
+    .hero__title {
+        width: 329px;
+        font-size: 48px;
+    }
+    .hero__description {
+        width: 372px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 922px) {
+    .hero__title {
+        color: var(--color-light);
+        margin-bottom: 24px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 922px) {
+    .hero__block {
+        background-image: url(../../imgs/desktop-bg.jpg);
+        padding: 117px 0px 117px 58px;
+    }
+    .hero__title {
+        width: 493px;
+    }
+    .hero__description {
+        width: 417px;
+    }
+}

@@ -1,0 +1,75 @@
+.customers__block {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+// cards wrapper
+.customers__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 48px;
+    position: relative;
+}
+
+.item__card {
+    width: 282px;
+}
+
+.card__title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--color-dark-blue);
+    margin-bottom: 24px;
+}
+
+.card__decription {
+    margin-top: 24px;
+    @include description;
+    color: var(--color-dark-blue);
+}
+
+.customers__items::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/collection.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60px;
+    top: -60px;
+    z-index: -9;
+}
+
+@media screen and (min-width: 769px) {
+    .item__card {
+        width: 573px;
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+
+    .customers__items::before {
+        background-image: url(../../imgs/collection-tablet.png);
+        height: 118px;
+    }
+}
+
+@media screen and (min-width: 922px) {
+    .item__card {
+        width: 255px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .customers__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

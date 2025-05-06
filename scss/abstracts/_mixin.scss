@@ -1,0 +1,43 @@
+@mixin navI {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 125%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-grey);
+}
+
+@mixin description {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 167%;
+    color: var(--color-light);
+    opacity: 0.8;
+}
+
+@mixin btn {
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--color-light);
+    font-size: 18px;
+    line-height: 139%;
+    font-weight: 900;
+    border-radius: 6px;
+}
+
+@mixin btn-default {
+    background: var(--color-dark-cyan);
+    @include btn;
+}
+
+@mixin btn-hover {
+    background: #66d2cf;
+    @include btn;
+}
+
+@mixin btn-disable {
+    background: #e2dedb;
+    @include btn;
+}

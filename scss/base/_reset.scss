@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: var(--second-family);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
