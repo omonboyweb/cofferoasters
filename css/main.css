@@ -556,9 +556,9 @@ h4 {
   font-weight: 900;
   font-size: 24px;
   line-height: 133%;
-  text-align: center;
   color: var(--color-grey);
-  margin-bottom: 80px;
+  margin-bottom: 80px !important;
+  margin: 0 auto;
 }
 
 .works__top {
@@ -671,6 +671,7 @@ h4 {
   }
   .works__title {
     margin-bottom: 40px;
+    margin: 0;
   }
   .works__items {
     display: -webkit-box;
@@ -688,5 +689,100 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 922px) {
+  .works__item-title {
+    font-size: 32px;
+    line-height: 112%;
+  }
+}
+footer {
+  background-color: #2c343e;
+}
+
+.footer__block {
+  padding-top: 54px;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+}
+
+.footer__brand-logo {
+  width: 217px;
+  height: 24px;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.footer__menu-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+@media screen and (min-width: 769px) {
+  .footer__brand-logo {
+    width: 236px;
+    height: 26px;
+  }
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 922px) {
+  .footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__menu {
+    margin: 0;
+  }
+  .footer__icon {
+    margin-left: auto;
   }
 }/*# sourceMappingURL=main.css.map */

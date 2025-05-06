@@ -11,9 +11,9 @@
     font-weight: 900;
     font-size: 24px;
     line-height: 133%;
-    text-align: center;
     color: var(--color-grey);
-    margin-bottom: 80px;
+    margin-bottom: 80px !important;
+    margin: 0 auto;
 }
 
 .works__top {
@@ -91,6 +91,7 @@
     }
     .works__title {
         margin-bottom: 40px;
+        margin: 0;
     }
 
     .works__items {
@@ -104,4 +105,11 @@
     .works__line {
         display: flex;
     }
+}
+
+@media screen and (min-width: 922px) {
+  .works__item-title{
+font-size: 32px;
+line-height: 112%;
+  }
 }
