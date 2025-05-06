@@ -278,7 +278,6 @@ h4 {
   line-height: 133%;
   text-align: center;
   color: var(--color-dark-blue);
-  margin-bottom: 24px;
 }
 
 .card__decription {
@@ -536,4 +535,91 @@ h4 {
     margin-bottom: 56px;
     margin-top: 62px;
   }
+}
+.works__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
+}
+
+.works__title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  color: var(--color-grey);
+  margin-bottom: 80px;
+}
+
+.works__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 56px;
+}
+
+.works__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+
+.works__item-count {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 100%;
+  color: #fdd6ba;
+  margin-bottom: 24px;
+}
+
+.works__item-title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 114%;
+  color: var(--color-dark-blue);
+}
+
+.works__item-description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 167%;
+  color: var(--color-light);
+  opacity: 0.8;
+  color: #333d4b;
+  opacity: 1;
+}
+
+.works__item-action {
+  background: var(--color-dark-cyan);
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--color-light);
+  font-size: 18px;
+  line-height: 139%;
+  font-weight: 900;
+  border-radius: 6px;
+  padding: 16px 31px;
+  margin-top: 79px;
 }/*# sourceMappingURL=main.css.map */
